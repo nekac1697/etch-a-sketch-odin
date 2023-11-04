@@ -8,4 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
       container.appendChild(square);
     }
   }
+
+  const squares = document.querySelectorAll(".squares");
+
+  squares.forEach((x) => {
+    x.addEventListener("mouseover", () => {
+      x.style.background = "black";
+    });
+    x.addEventListener("click", () => {
+      x.style.background = "white";
+    });
+  });
 });
